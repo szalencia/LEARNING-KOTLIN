@@ -1,0 +1,76 @@
+fun main() {
+    // Declaring a Variable
+    // val <name> : <data type> = <initialValue>
+    val sysHang : Int = 2
+    val sysNotSoHang : Int = sysHang
+    println(sysHang)
+    println(sysNotSoHang)
+    // "string contents $<variableName> rest of the string"
+    println("sysNotSoHang got the same value ($sysNotSoHang) which is same as sysHang ($sysHang)")
+    // Smooth
+    // or you can use something called as Type interface. i.e. Kotlin can determine what data type the value is
+    val sysWhat = 10
+    print(sysWhat)
+    println("\t atleast now we know what exacly println does")
+    println("It adds a new line after whatever it got to print")
+    print("So it basically prints right at the cursor")
+    print("\tjust like this, just like print")
+    val mhm : Int
+    println("\n if you don;t initialize the value, you must specify the datatype")
+    println("You can't use the value without initialisation tho")
+    // println(mhm) is error
+    
+    myfun()
+    funmy()
+}
+
+fun myfun() {
+    println("A NEW FUNCTION ENTERS THE CHAT")
+    val valyu = 0
+    // valyu = 20 ERROR
+    // print("Value : $valyu")
+    // use val (value) when you expect the value won't need to be reassigned
+    // use var (variable) when you expect the value to be reassigned or change
+    var myvar = 0
+    println(myvar) //0
+    var varmy : Int = 10
+    println(varmy) // 10
+    myvar = myvar + 5
+    println(myvar) // 5
+    myvar = myvar + varmy
+    println(myvar) // 15
+    myvar += 5
+    println(myvar) // 20
+    myvar++
+    println(myvar) // 21
+    myvar--
+    println(myvar) // 20
+}
+
+fun funmy() {
+    val message = "Next Meeting"
+    val date = "September 16th"
+    val reminder = message + " " + date
+    println(reminder)
+    println("Thank you \"Sire!\" \\t see this is how we print an escape sequence")
+    var notificationsEnabled = true
+    var chatsEnabled : Boolean = false
+    println(notificationsEnabled) // true
+    println(chatsEnabled) // false
+    // the t of True and f of False are always in lowercase
+    
+}
+
+/*
+ * coding conventions
+ * val discount:<space>Double = .20
+ * val discount: Double = .20
+ * var pet<space>=<space>"bird"
+ * var pet = "bird"
+ * var sum = 1<space>+<space>2
+ * var sum = 1 + 2
+ * 
+ * There is a recommended limit of 100 characters per line
+ * So that you don't need to scroll horizontally on screen
+ */
+ 
