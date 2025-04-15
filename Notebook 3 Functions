@@ -1,0 +1,79 @@
+fun main() {
+    systemhang()
+    println(syswhat())
+    println(wish("SISHTAM"))
+    println(wishadv("System","SystemDay"))
+    score(name = "Tarun", score = 25) // Named Arguments and Default Arguments
+}
+/*
+ * fun <name> () {
+ * 		function contents
+ * 		function contents
+ * }
+ */
+ fun systemhang() {
+     println("System is really so hang")
+ }
+/*
+ * fun <name> () : <return type> {
+ * 		body1
+ * 		body2
+ * 		<return statement>
+ * }
+ */
+ fun system() : Unit {
+     println("Unit aka void")
+     println("If a function returns nothing, it returns void")
+     println("If it returns void, it returns unit")
+ }
+ 
+ fun syswhat(): String {
+     println("Am I return String?")
+     val x: String ="Yes"
+     return "Ehh\n$x"
+ }
+ 
+ /*
+  * fun <name> (<parameters>): <return type> {
+  * 		BODY
+  * 		BODY
+  * }
+  */
+  
+  fun wish (name : String): String {
+      // name = "PEARL" ERROR CAN'T REASSIGN VALUE
+      return "Happy Day $name"
+  }
+  // You can't reassign the value of a parameter from within the function
+  // So the Parameters(Arguments) are actually VALUES and not VARIABLES
+  
+  // MULTIPLE PARAMETERS
+  fun wishadv (name : String, day : String): String {
+      return "Happy $day $name"
+  }
+  
+  // Here roll : Int = 0 is a default argument
+  fun score (score : Int, name : String, roll : Int = 0): Unit {
+      println("$name (Roll No. $roll ) Scored $score Marks!!")
+  }
+  
+  /*
+    Summary
+
+    Functions are defined with the fun keyword and contain reusable pieces of code.
+    
+    Functions help make larger programs easier to maintain and prevent the 
+    unnecessary repetition of code.
+    
+    Functions can return a value that you can store in a variable for later use.
+    
+    Functions can take parameters, which are variables available inside a function body.
+    
+    Arguments are the values that you pass in when you call a function.
+    
+    You can name arguments when you call a function. When you use named arguments,
+    you can reorder the arguments without affecting the output.
+    
+    You can specify a default argument that lets you omit the argument when 
+    you call a function.
+  */
