@@ -1,0 +1,17 @@
+
+fun main() {
+    var name = "Tarun"
+    val message : String = "Happy Birthday"
+    val emoji = ":)"
+    val display = name + " " + message + " $emoji"
+    println(display)
+}
+fun main() {
+    val num1 : Int = 10
+    val num2 = 20
+    var result = num1 + num2
+    println("$num1 + $num2 = $result")
+    result = num1 * num2
+    println("$num1 * $num2 = $result")
+    println(num1>num2)
+}
